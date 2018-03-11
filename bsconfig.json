@@ -1,0 +1,24 @@
+{
+    "name" : "bem-helper",
+    "refmt": 3,
+    "bs-dependencies": [],
+    "bs-dev-dependencies": [
+        "@glennsl/bs-jest"
+    ],
+    "bsc-flags": ["-bs-gen-tds"],
+    "sources": [
+        {
+            "dir" : "src",
+            "subdirs": true
+        },
+        {
+          "dir": "__tests__",
+          "subdirs": true,
+          "type": "dev"
+        }
+    ],
+    "package-specs": {
+        "module": "commonjs",
+        "in-source": true
+    }
+}

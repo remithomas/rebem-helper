@@ -1,0 +1,20 @@
+{
+  "name": "bem-helper",
+  "version": "1.0.0",
+  "description": "Simple BEM helper",
+  "main": "index.js",
+  "repository": "https://github.com/remithomas/bem-helper.git",
+  "author": "Remi THOMAS <remi.thomas@yahoo.fr>",
+  "license": "MIT",
+  "scripts": {
+    "start": "bsb -make-world -w",
+    "build": "bsb -make-world",
+    "clean": "bsb -clean-world",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.2",
+    "bs-platform": "^2.2.2",
+    "jest": "^22.4.2"
+  }
+}
