@@ -1,6 +1,6 @@
 {
   "name": "rebem-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple BEM helper with ReasonMl",
   "main": "index.js",
   "repository": "https://github.com/remithomas/rebem-helper.git",
