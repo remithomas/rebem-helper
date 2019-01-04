@@ -21,9 +21,11 @@
     "bsconfig.json"
   ],
   "scripts": {
+    "postinstall": "npm run test",
     "start": "bsb -make-world -w",
     "build": "bsb -make-world",
     "clean": "bsb -clean-world",
+    "pretest": "npm run build",
     "test": "jest --coverage",
     "test:dev": "jest --watchAll",
     "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls"
@@ -35,9 +37,9 @@
     "bs-platform": "^3.1.5"
   },
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.2",
-    "bs-platform": "^3.0.0",
-    "coveralls": "^3.0.1",
-    "jest": "^23.0.0"
+    "@glennsl/bs-jest": "^0.4.6",
+    "bs-platform": "^4.0.14",
+    "coveralls": "^3.0.2",
+    "jest": "^23.6.0"
   }
 }
